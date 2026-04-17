@@ -1,0 +1,17 @@
+<div id="IndStreamPlayer" style="display: flex; width: 100%; height: 100%;"></div>
+
+<script>
+  // Extract the ID from the current URL path
+  const pathParts = window.location.pathname.split('/');
+  const videoId = pathParts[pathParts.length - 1]; // Gets '5524'
+  
+  const IndStreamPlayerConfigs = {
+    width: '100%',
+    height: '100%',
+    id: 'IndStreamPlayer',
+    src: videoId, // Will be '5524'
+    tr: false
+  };
+</script>
+
+<script src="https://route7ind.com/player.js"></script>
